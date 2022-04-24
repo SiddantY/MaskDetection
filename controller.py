@@ -11,11 +11,10 @@ board.digital[pin].mode=SERVO
 
 def RotateServo(pin, angle):
     board.digital[pin].write(angle)
-    time.sleep(7)
-    board.digital[pin].write(angle)
 
 def BoxOpener(label):
     if label=="Mask":
+        RotateServo(pin, 20)
         pass
     elif label=="No Mask":
         RotateServo(pin, 180)
