@@ -1,7 +1,7 @@
 from pyfirmata import Arduino, SERVO
 import time
 
-port = 'COM5'
+port = 'COM3'
 
 pin = 10
 
